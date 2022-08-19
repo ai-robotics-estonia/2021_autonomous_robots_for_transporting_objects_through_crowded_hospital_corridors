@@ -19,7 +19,20 @@
 
 ## Implementation Details
 
-*This section is to be filled out by the development team. You should describe details about the technical implementation right here. To get started, you can use [this guide](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/) from freeCodeCamp for inspiration. Please note that some of the sections are already included below but you can add more.*
+Figure below shows the architecture of our deployed system. The setup consists of
+* robots
+* automated doors
+* user interface devices, such as tablets
+* dispensers and ingestors, which are used to place and retrieve objects from the robot respectively
+* and RMF, orchestrating the whole setup. 
+
+All devices are connected via Virtual Private Network (VPN). FreeFleet is used as the fleet manager. Structurally FreeFleet is segregated to a central server and clients, a client per each robot. The server is responsible for mediating navigation requests from RMF and providing feedback to RMF via aggregating the state of the whole fleet. The FreeFleet client passes navigation requests from the server to the driver of the local robot (ROS Navigation) and provides feedback of the robot’s state. Both RMF and the FreeFleet server are running on a dedicated PC. FreeFleet server and clients communicate purely via Cyclone DDS, thus the server can simultaneously manage both ROS1 and ROS2 based robots. Each door, dispenser and ingestor is equipped with a custom controller ([door controller](https://github.com/project-covsg24/card_swipe_py); [tablet-based dispenser](https://github.com/project-covsg24/rmf_dispenser_ingestor_tools)) that accepts commands from and sends feedback to RMF. Finally, RMF Web is utilized as a graphical user interface, mostly deployed on tablets via a web browser.
+
+<p align="center">
+  <img src="https://github.com/scafld/covsg24_fleet_backend/blob/main/docs/system_setup.png" class="center" width=600"/>
+</p>
+
+For further details, refer to [our article published at the Frontiers in Robotics and AI](http://doi.org/10.3389/frobt.2022.922835) and [the replication package](https://doi.org/10.5281/zenodo.6467038). The latest source code and instructions of our ongoing development can be found in the [GitHub for SCAFLD](https://github.com/scafld). 
 
 ### Description
 
