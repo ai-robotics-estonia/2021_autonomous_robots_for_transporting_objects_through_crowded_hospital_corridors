@@ -1,21 +1,18 @@
-*This is a template repository for this organization. Start by replacing the placeholder for the project name with it's actual title.*
-
-# [Project Name]
+# Autonomous transportation robots in crowded hospital environments
 
 ## Summary
-*This section is to be filled out by the project manager based on the [summary document](https://docs.google.com/spreadsheets/d/12xi2yOMm-X5PEecgyRe3WEurcSaN9A5z4DHgBacQT6M).*
 
-| Company | [Company](https://website.link) |
+| Company | [Tartu University Hospital](https://www.kliinikum.ee/) |
 | :--- | :--- |
-| Project Manager | [Project Manager](https://profile.link) |
-| Project Team | [Team Member 1](https://profile.link); [Team Member 2](https://profile.link); ... |
-| Challenge Tackled |  |
-| Technology Used |  |
-| Lessons Learned |  |
-| Result Published |  |
-| Target Group |  |
-| Diagrams/Photos |  |
-| Video |  |
+| Project Manager | [Karl KRUUSAMÄE](https://www.etis.ee/cv/Karl_Kruusamae) |
+| Project Core Team | [Robert Valner](https://www.etis.ee/cv/Robert_Valner); Karl Riis; Meelis Kull; Houman Masnavi; Igor Rybalskii; Rauno Põlluäär; Erik Kõiv; Renno Raudmäe; Alvo Aabloo; [Arun Kumar Singh](https://www.etis.ee/CV/Arun%20Kumar_Singh/) |
+| Challenge Tackled | Deployng mobile robots that handle dynamic obstacles (e.g. humans in hosptial corridors) and coordinate tasks with other robots as well as IoT devices. |
+| Technology Used | ROS, ROS2, Robotics Middleware Framework (RMF), FreeFleet, Pal Robotics TIAGo, Clearpath Jackal, Forecasting Human Trajectories with Uncertainty Estimation |
+| Lessons Learned | Deploying mobile robots in hospital is feasible but continues to require simultaneous engineering effort. Potentially outdated infrastructure (e.g., lack of centrally-controlled doors and elevators) add barriers to deploying AI-based technoloogy. It is possible to create a relatively well-performing trajectory forecasting method whilst keeping the inner workings of its algorithm easy to follow. |
+| Result Published | We integrated a software stack and deployed a mobile robot to transport time-critical samples for the intensive care unit to the hospital lab. Our work builds upon Robotics Middleware Framework (RMF), an open source, actively growing and highly capable fleet management platform which is yet to reach full maturity. Additionally, we benchmarked and assessed the feasibility of forecasting human walking trajectories so that this information would serve as an input for motion planning algorithms for the mobile robot. |
+| Target Group | Hospitals, warehouses, manufacturing floors, supermarkets and department stores, transportation hubs (airports, tainstations, etc), schools, etc |
+| Diagrams/Photos | http://doi.org/10.3389/frobt.2022.922835 |
+| Video | Supplemental data at http://doi.org/10.3389/frobt.2022.922835 |
 
 ## Implementation Details
 
@@ -36,9 +33,9 @@ For further details, refer to [our article published at the Frontiers in Robotic
 
 ### Description
 
-- *What your application does,*
-- *Why you used the technologies you used,*
-- *Some of the challenges you faced and features you hope to implement in the future.*
+- The results, lessons learned and the source code of deploying a heterogeneous mobile robot fleet for transporting time-critical samples from an intensive care unit to the laboratory at the Tartu University Hospital.
+- The developed system showcases the level of maturity for several technological capabilities and tools. Among them, the Robotics Middleware Framework (RMF), an open-source fleet management system for interoperability of heterogeneous robotic systems.
+- Futhermore, a trajectory forecasting method is proposed which operates by generating a large number of potential future trajectories for one historical trajectory, and then choosing a limited number of representative predictions from them by dividing them into separate probability groups and running K-Means clustering on each group separately
 
 ### How to Install, Run & Use
 
