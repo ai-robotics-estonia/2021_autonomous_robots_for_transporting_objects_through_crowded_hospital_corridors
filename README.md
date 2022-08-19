@@ -40,28 +40,27 @@ For further details, refer to [our article published at the Frontiers in Robotic
 - *Why you used the technologies you used,*
 - *Some of the challenges you faced and features you hope to implement in the future.*
 
-### How to Install & Run
+### How to Install, Run & Use
 
-*Provide a step-by-step description of how to get the development environment set and running.*
-
-### How to Use
-
-*Provide instructions and examples so users/contributors can use the project.*
-
-### Credits
-
-*If you followed tutorials or referenced a certain material that might help the user to build this particular project, include links to those here.*
+For detailed instructions:
+- To replicate the deployment demo: https://doi.org/10.5281/zenodo.6467038
+- To replicate the trajectory forecasting: https://github.com/karlriis/trajectory-forecasting 
+- To be up-to-date on our ongoing development: https://github.com/scafld
 
 ### Licensing
 
-*Point out your software license. In case this is something different than an MIT license, explain why.*
-
-[MIT License](/LICENSE)
+Please refer to the above linked repositories for specific software licenses of integrated components. Since [Open Robotics](https://github.com/osrf) maintains RMF and ROS2 under Apache 2.0, the majority of the work is licensed under Apache 2.0 software license.
 
 ### How to Contribute
 
-*Add guidelines to let other developers know how they can contribute to your project.*
+If you are interested in contributing, feel free to contact people in the project team or just reach out to us via our GitHub at https://github.com/scafld.
 
-### Testing
-
-*Provide code examples and how to run tests for your project.*
+Also, if the content in this repository is helping your research, please cite us as follows:
+```
+@article{valner_frobt2022,
+  title={Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments - a field test},
+  author={Robert Valner and Houman Masnavi and Igor Rybalskii and Rauno Põlluäär and Erik Kõiv and Alvo Aabloo and Karl Kruusamäe and Arun Kumar Singh},
+  journal = {Frontiers in Robotics and AI},
+  year = {2022},
+  doi={10.3389/frobt.2022.922835 },
+}
