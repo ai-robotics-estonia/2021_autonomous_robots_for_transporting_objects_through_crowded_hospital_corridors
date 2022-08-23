@@ -55,9 +55,11 @@ If you are interested in contributing, feel free to contact people in the projec
 Also, if the content in this repository is helping your research, please cite us as follows:
 ```
 @article{valner_frobt2022,
-  title={Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments - a field test},
-  author={Robert Valner and Houman Masnavi and Igor Rybalskii and Rauno Põlluäär and Erik Kõiv and Alvo Aabloo and Karl Kruusamäe and Arun Kumar Singh},
+  title = {Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments - a field test},
+  author = {Robert Valner and Houman Masnavi and Igor Rybalskii and Rauno Põlluäär and Erik Kõiv and Alvo Aabloo and Karl Kruusamäe and Arun Kumar Singh},
   journal = {Frontiers in Robotics and AI},
   year = {2022},
-  doi={10.3389/frobt.2022.922835 },
+  volume = {9},
+  pages = {922835},
+  doi = {10.3389/frobt.2022.922835}
 }
